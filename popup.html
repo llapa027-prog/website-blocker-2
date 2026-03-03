@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Blocker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 250px;
+      padding: 15px;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Website Blocker</h2>
+
+  <button id="toggleBlocking">Disable Blocking</button>
+  <button id="openOptions">Manage Blocked Sites</button>
+
+  <div class="status" id="statusText"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

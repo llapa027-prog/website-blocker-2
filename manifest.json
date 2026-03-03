@@ -1,0 +1,25 @@
+{
+  "name": "Custom Website Blocker",
+  "description": "Block websites you choose.",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "permissions": [
+    "storage",
+    "declarativeNetRequest"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "options_page": "options.html",
+
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
